@@ -1,0 +1,83 @@
+# Local environment and secrets
+.env
+.env.*
+*.env
+configs/env.local
+configs/paths.local.yaml
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Local work outputs
+work/
+tmp/
+outputs/
+renders/
+generated/
+review/
+cache/
+
+# Logs and crash dumps
+*.log
+logs/
+crash/
+*.tmp
+*.temp
+
+# Generated media and production assets
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.exr
+*.psd
+*.clip
+*.blend
+*.blend1
+*.aep
+*.aepx
+
+# Model and dataset artifacts
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.bin
+*.gguf
+models/
+checkpoints/
+loras/
+embeddings/
+datasets/
+
+# Python and Node caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+

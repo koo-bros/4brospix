@@ -1,0 +1,23 @@
+# Example path configuration for public documentation and local tests.
+# Copy to configs/paths.local.yaml for real local use.
+# Keep machine-specific absolute paths out of git.
+
+project_root: "."
+
+manifests_dir: "manifests"
+docs_dir: "docs"
+
+work_dir: "work"
+generated_dir: "work/generated"
+blender_dir: "work/blender"
+csp_dir: "work/csp"
+after_effects_dir: "work/ae"
+renders_dir: "work/renders"
+tmp_dir: "tmp"
+
+provider_cache_dir: "work/provider_cache"
+
+public_examples:
+  placeholder_media_dir: "examples/placeholders"
+  manifest: "manifests/shot_manifest.example.json"
+

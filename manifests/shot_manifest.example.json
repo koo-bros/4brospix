@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "project": {
+    "id": "example_project",
+    "title": "Example Animation Study",
+    "description": "Synthetic public example for the 4brospix manifest format."
+  },
+  "defaults": {
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "provider": "dry_run"
+  },
+  "providers": [
+    {
+      "id": "dry_run",
+      "type": "dry_run",
+      "description": "Local placeholder provider for validation and tests."
+    },
+    {
+      "id": "comfyui_example",
+      "type": "comfyui",
+      "description": "Conceptual example only. No endpoint or credentials are included."
+    },
+    {
+      "id": "future_video_example",
+      "type": "future_openai_video",
+      "description": "Conceptual future video provider adapter example."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "title": "Opening Test Scene",
+      "summary": "A safe synthetic scene used to demonstrate shot organization.",
+      "shots": [
+        {
+          "id": "scene_001_shot_001",
+          "title": "Establishing shot",
+          "status": "planned",
+          "frame_start": 1,
+          "frame_end": 96,
+          "prompt": {
+            "positive": "A stylized animated establishing shot of a small workshop at sunrise, clean composition, warm practical lights.",
+            "negative": "low quality, unreadable text, watermark"
+          },
+          "generation": {
+            "provider": "dry_run",
+            "task_type": "text_to_video",
+            "seed": 12345,
+            "duration_frames": 96,
+            "inputs": [],
+            "output_expectations": {
+              "format": "image_sequence_or_video",
+              "notes": "Placeholder expectation for public example only."
+            }
+          },
+          "handoff": {
+            "blender": {
+              "needed": true,
+              "notes": "Block camera move with simple proxy geometry."
+            },
+            "csp": {
+              "needed": false,
+              "notes": ""
+            },
+            "after_effects": {
+              "needed": true,
+              "notes": "Composite title-safe final candidate."
+            }
+          },
+          "artifacts": [],
+          "review": {
+            "decision": "not_reviewed",
+            "notes": []
+          }
+        },
+        {
+          "id": "scene_001_shot_002",
+          "title": "Character insert",
+          "status": "planned",
+          "frame_start": 97,
+          "frame_end": 144,
+          "prompt": {
+            "positive": "A stylized animated close insert of hands arranging paper storyboards on a desk.",
+            "negative": "low quality, extra fingers, watermark"
+          },
+          "generation": {
+            "provider": "dry_run",
+            "task_type": "image_to_video",
+            "seed": 67890,
+            "duration_frames": 48,
+            "inputs": [
+              {
+                "kind": "reference_image",
+                "path": "examples/placeholders/storyboard_reference.placeholder",
+                "public_safe": true
+              }
+            ],
+            "output_expectations": {
+              "format": "image_sequence_or_video",
+              "notes": "Use synthetic placeholder references only."
+            }
+          },
+          "handoff": {
+            "blender": {
+              "needed": false,
+              "notes": ""
+            },
+            "csp": {
+              "needed": true,
+              "notes": "Paint-over selected key frame if needed."
+            },
+            "after_effects": {
+              "needed": true,
+              "notes": "Add cleanup and timing pass."
+            }
+          },
+          "artifacts": [],
+          "review": {
+            "decision": "not_reviewed",
+            "notes": []
+          }
+        }
+      ]
+    }
+  ]
+}
