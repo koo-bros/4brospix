@@ -16,7 +16,9 @@ The goal is not to present a finished product. The goal is to make a public OSS 
 
 Early experimental.
 
-This repository currently contains documentation, example manifests, and configuration templates only. Implementation code, production assets, generated media, private provider workflows, and internal automation are not part of this first public commit.
+This repository currently contains public documentation, sanitized examples, one Scene01 demo media set, and a small local automation script.
+
+It does not include private source trees, raw internal workflows, credentials, model weights, production assets, logs, or machine-specific paths.
 
 ## Scene01: Codex-Controlled LTX Video Generation
 
@@ -86,8 +88,11 @@ These names are conceptual examples only. This public repository does not includ
 |   |-- 03_local_lab_workflow.md
 |   |-- 04_security_and_redaction.md
 |   |-- codex_ltx_autorender.md
+|   |-- demo/
+|   |   `-- scene01.html
 |   |-- media/
-|   |   `-- scene01_input_preview.png
+|   |   |-- scene01_input_preview.png
+|   |   `-- scene01_output_demo.mp4
 |   `-- case_studies/
 |       `-- scene01_ltx_tiltup.md
 |-- examples/
@@ -111,10 +116,12 @@ These names are conceptual examples only. This public repository does not includ
 - Private source trees or scripts from earlier development
 - Private IP addresses, hostnames, usernames, passwords, API keys, tokens, or `.env` files
 - Internal server details or deployment notes
-- Production assets, generated frames, generated videos, final renders, or review media
+- Production assets, generated production media, final renders, or review media
 - Model weights, checkpoints, LoRAs, embeddings, caches, or downloaded datasets
 - Logs, temporary files, machine-specific paths, and editor state
 - Proprietary provider workflows or account-specific settings
+
+Exception: this repository includes one small public Scene01 demo MP4 at `docs/media/scene01_output_demo.mp4`. Future demo videos should replace this file rather than accumulate in git history.
 
 ## Security Note
 
