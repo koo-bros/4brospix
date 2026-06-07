@@ -1,0 +1,38 @@
+{
+  "schema": "4brospix.scene_run_manifest.v1",
+  "shot_id": "scene01",
+  "case_study": "codex_ltx_tiltup",
+  "status": "succeeded_internal_test",
+  "controller": "Codex",
+  "executor": "ComfyUI",
+  "workflow_family": "LTX image-to-video",
+  "source": {
+    "image": "<INPUT_IMAGE_PATH>",
+    "origin": "GPT-generated image",
+    "published": false
+  },
+  "request": {
+    "camera_motion": "tilt_up",
+    "prompt": "<PROMPT_TEXT>",
+    "negative_prompt": "<NEGATIVE_PROMPT_TEXT>",
+    "seed": "<SEED>",
+    "settings": {
+      "duration_frames": "<FRAME_COUNT>",
+      "resolution": "<WIDTH>x<HEIGHT>",
+      "guidance": "<GUIDANCE_VALUE>",
+      "steps": "<STEP_COUNT>"
+    }
+  },
+  "result": {
+    "internal_output_filename": "scene01_true_tiltup_v02_camera_prompt_strong_v63_00001.mp4",
+    "output_path": "<OUTPUT_VIDEO_PATH>",
+    "public_video_included": false,
+    "public_video_policy": "omit raw video; preview requires separate approval"
+  },
+  "redaction": {
+    "private_paths_removed": true,
+    "machine_details_removed": true,
+    "model_paths_removed": true,
+    "private_assets_removed": true
+  }
+}

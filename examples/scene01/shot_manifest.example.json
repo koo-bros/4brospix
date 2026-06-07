@@ -1,0 +1,30 @@
+{
+  "schema": "4brospix.scene_shot_manifest.v1",
+  "shot_id": "scene01",
+  "title": "Codex-controlled LTX tilt-up",
+  "status": "example",
+  "input": {
+    "source_image": "<INPUT_IMAGE_PATH>",
+    "source_image_origin": "GPT-generated image",
+    "source_image_public": false
+  },
+  "intent": {
+    "camera_motion": "slow upward tilt",
+    "composition_goal": "preserve the source image structure while revealing more vertical context",
+    "motion_constraints": [
+      "avoid large lateral drift",
+      "preserve scene identity",
+      "keep the camera move readable"
+    ]
+  },
+  "runtime": {
+    "controller": "Codex",
+    "executor": "ComfyUI",
+    "workflow_family": "LTX image-to-video",
+    "workflow_template": "ltx_workflow.template.json"
+  },
+  "output": {
+    "target_video": "<OUTPUT_VIDEO_PATH>",
+    "public_preview": false
+  }
+}

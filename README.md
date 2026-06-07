@@ -1,6 +1,6 @@
 # 4brospix
 
-4brospix is an experimental open-source AI animation production pipeline.
+4brospix is an experimental open-source AI animation production pipeline where Codex can control local generation workflows.
 
 It connects story and shot manifests, AI image/video generation providers, ComfyUI/Wan-style workflows, Blender layout, CSP paint-over, After Effects compositing, and final render organization.
 
@@ -17,6 +17,26 @@ The goal is not to present a finished product. The goal is to make a public OSS 
 Early experimental.
 
 This repository currently contains documentation, example manifests, and configuration templates only. Implementation code, production assets, generated media, private provider workflows, and internal automation are not part of this first public commit.
+
+## Scene01: Codex-Controlled LTX Video Generation
+
+Scene01 is the first sanitized public case study.
+
+```text
+GPT-generated image
+  -> local Codex instruction
+  -> Codex fills prompt/settings
+  -> ComfyUI LTX single workflow
+  -> generated tilt-up video
+```
+
+Status: successful internal test, sanitized public case study.
+
+The raw source image, raw workflow JSON, private run scripts, and generated MP4 are not included. The public package documents the workflow shape and provides template files:
+
+- [Codex-controlled LTX autorender](docs/codex_ltx_autorender.md)
+- [Scene01 LTX tilt-up case study](docs/case_studies/scene01_ltx_tiltup.md)
+- [Scene01 examples](examples/scene01/)
 
 ## Pipeline
 
@@ -55,7 +75,18 @@ These names are conceptual examples only. This public repository does not includ
 |   |-- 01_pipeline_architecture.md
 |   |-- 02_provider_abstraction.md
 |   |-- 03_local_lab_workflow.md
-|   `-- 04_security_and_redaction.md
+|   |-- 04_security_and_redaction.md
+|   |-- codex_ltx_autorender.md
+|   `-- case_studies/
+|       `-- scene01_ltx_tiltup.md
+|-- examples/
+|   `-- scene01/
+|       |-- shot_manifest.example.json
+|       |-- codex_instruction.example.md
+|       |-- run_manifest.redacted.json
+|       `-- ltx_workflow.template.json
+|-- scripts/
+|   `-- comfyui_ltx_autorender.py
 |-- manifests/
 |   `-- shot_manifest.example.json
 |-- configs/
@@ -81,4 +112,3 @@ Treat this repository as public by default. Do not commit secrets, generated pro
 ## Roadmap
 
 See [ROADMAP.md](ROADMAP.md) for the public development direction.
-

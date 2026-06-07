@@ -8,6 +8,24 @@ The public repository is a sanitized lab notebook and workflow framework. It is 
 
 The project starts with a shot manifest. Each shot can carry story intent, prompt data, frame ranges, provider job records, review status, and links to local outputs. Pipeline stages can then read and update structured records rather than relying on scattered filenames and manual notes.
 
+## Scene01 Case Study
+
+Scene01 shows the public workflow pattern in a concrete, sanitized form:
+
+```text
+GPT-generated image
+  -> local Codex instruction
+  -> Codex fills prompt/settings
+  -> ComfyUI LTX single workflow
+  -> generated tilt-up video
+```
+
+The internal test succeeded, but the raw image, raw workflow JSON, private scripts, and generated video are not included in the public repository.
+
+- [Codex-controlled LTX autorender](codex_ltx_autorender.md)
+- [Scene01 LTX tilt-up case study](case_studies/scene01_ltx_tiltup.md)
+- [Scene01 shot manifest example](../examples/scene01/shot_manifest.example.json)
+
 ## Public Goals
 
 - Keep shot planning and production metadata explicit.
@@ -34,4 +52,3 @@ Story / Shot Manifest
   -> After Effects compositing
   -> Final render organization
 ```
-

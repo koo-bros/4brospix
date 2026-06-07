@@ -1,0 +1,41 @@
+{
+  "schema": "4brospix.comfyui_ltx_workflow_template.v1",
+  "description": "Template shape for a ComfyUI LTX image-to-video workflow. This is not raw production workflow JSON.",
+  "inputs": {
+    "source_image": "<INPUT_IMAGE_PATH>",
+    "prompt": "<PROMPT_TEXT>",
+    "negative_prompt": "<NEGATIVE_PROMPT_TEXT>",
+    "seed": "<SEED>",
+    "output_path": "<OUTPUT_VIDEO_PATH>"
+  },
+  "workflow": {
+    "load_image": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "<INPUT_IMAGE_PATH>"
+      }
+    },
+    "ltx_image_to_video": {
+      "class_type": "LTXImageToVideo",
+      "inputs": {
+        "image": ["load_image", 0],
+        "prompt": "<PROMPT_TEXT>",
+        "negative_prompt": "<NEGATIVE_PROMPT_TEXT>",
+        "seed": "<SEED>",
+        "num_frames": "<FRAME_COUNT>",
+        "width": "<WIDTH>",
+        "height": "<HEIGHT>",
+        "steps": "<STEP_COUNT>",
+        "guidance": "<GUIDANCE_VALUE>",
+        "model": "<MODEL_PATH>"
+      }
+    },
+    "save_video": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": ["ltx_image_to_video", 0],
+        "filename_prefix": "scene01_public_example"
+      }
+    }
+  }
+}
