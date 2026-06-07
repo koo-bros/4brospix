@@ -30,15 +30,18 @@ GPT-generated image
   -> generated tilt-up video
 ```
 
-Status: successful internal test, sanitized public case study with a small input preview.
+Status: successful internal test, sanitized public case study with a small input preview and one demo MP4.
 
-The raw workflow JSON, private run scripts, and generated MP4 are not committed to git. The public package documents the workflow shape, includes a small input preview, and provides template files:
+The raw workflow JSON and private run scripts are not committed to git. The public package documents the workflow shape, includes a small input preview, includes one demo MP4, and provides template files:
 
 - [Codex-controlled LTX autorender](docs/codex_ltx_autorender.md)
 - [Scene01 LTX tilt-up case study](docs/case_studies/scene01_ltx_tiltup.md)
 - [Scene01 input preview](docs/media/scene01_input_preview.png)
+- [Scene01 output demo MP4](docs/media/scene01_output_demo.mp4)
 - [Scene01 demo release asset](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 - [Scene01 examples](examples/scene01/)
+
+This repository includes one small demo MP4. Future generated demos should replace `docs/media/scene01_output_demo.mp4` rather than adding many video files.
 
 ## Pipeline
 

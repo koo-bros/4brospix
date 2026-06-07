@@ -29,6 +29,7 @@ crash/
 
 # Generated media and production assets
 *.mp4
+!docs/media/scene01_output_demo.mp4
 *.mov
 *.avi
 *.mkv
@@ -80,4 +81,3 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
-
