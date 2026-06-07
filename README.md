@@ -36,6 +36,7 @@ The raw workflow JSON and private run scripts are not committed to git. The publ
 
 - [Codex-controlled LTX autorender](docs/codex_ltx_autorender.md)
 - [Scene01 LTX tilt-up case study](docs/case_studies/scene01_ltx_tiltup.md)
+- [Watch the Scene01 demo in browser](https://koo-bros.github.io/4brospix/demo/scene01.html)
 - [Scene01 input preview](docs/media/scene01_input_preview.png)
 - [Scene01 output demo MP4](docs/media/scene01_output_demo.mp4)
 - [Scene01 demo release asset](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)

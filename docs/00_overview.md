@@ -24,6 +24,7 @@ The internal test succeeded. The repository includes a small input preview, one 
 
 - [Codex-controlled LTX autorender](codex_ltx_autorender.md)
 - [Scene01 LTX tilt-up case study](case_studies/scene01_ltx_tiltup.md)
+- [Scene01 browser demo](https://koo-bros.github.io/4brospix/demo/scene01.html)
 - [Scene01 input preview](media/scene01_input_preview.png)
 - [Scene01 output demo MP4](media/scene01_output_demo.mp4)
 - [Scene01 demo release asset](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)

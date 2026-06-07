@@ -10,6 +10,7 @@ scene01_true_tiltup_v02_camera_prompt_strong_v63_00001.mp4
 
 The repository includes one demo MP4, and the same file is also published as a GitHub Release asset:
 
+- [Browser demo](https://koo-bros.github.io/4brospix/demo/scene01.html)
 - [Scene01 output demo MP4](../media/scene01_output_demo.mp4)
 - [scene01-demo-v0.1](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 
