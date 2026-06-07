@@ -32,13 +32,16 @@ GPT-generated image
 
 Status: successful internal test, sanitized public case study with a small input preview and one demo MP4.
 
-The raw workflow JSON and private run scripts are not committed to git. The public package documents the workflow shape, includes a small input preview, includes one demo MP4, and provides template files:
+The raw workflow JSON and private run scripts are not committed to git. The public package documents the workflow shape, includes a small input preview, includes one demo MP4, and provides template files.
+
+### Scene01 demo
+
+[![Scene01 input preview](docs/media/scene01_input_preview.png)](https://koo-bros.github.io/4brospix/demo/scene01.html)
 
 - [Codex-controlled LTX autorender](docs/codex_ltx_autorender.md)
 - [Scene01 LTX tilt-up case study](docs/case_studies/scene01_ltx_tiltup.md)
-- [Watch the Scene01 demo in browser](https://koo-bros.github.io/4brospix/demo/scene01.html)
-- [Scene01 input preview](docs/media/scene01_input_preview.png)
-- [Scene01 output demo MP4](docs/media/scene01_output_demo.mp4)
+- [브라우저에서 Scene01 데모 보기](https://koo-bros.github.io/4brospix/demo/scene01.html)
+- [Scene01 출력 MP4](docs/media/scene01_output_demo.mp4)
 - [Scene01 demo release asset](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 - [Scene01 examples](examples/scene01/)
 
