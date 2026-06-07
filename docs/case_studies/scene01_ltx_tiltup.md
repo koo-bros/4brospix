@@ -8,7 +8,9 @@ The original internal output filename was:
 scene01_true_tiltup_v02_camera_prompt_strong_v63_00001.mp4
 ```
 
-The raw video is not included in this repository.
+The full MP4 is published as a GitHub Release asset instead of being committed to git:
+
+- [scene01-demo-v0.1](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 
 ## Story
 
@@ -33,26 +35,26 @@ GPT-generated image
 
 The public package includes examples only:
 
+- [`docs/media/scene01_input_preview.png`](../media/scene01_input_preview.png)
 - `examples/scene01/shot_manifest.example.json`
 - `examples/scene01/codex_instruction.example.md`
 - `examples/scene01/run_manifest.redacted.json`
 - `examples/scene01/ltx_workflow.template.json`
 
-These files are templates. They are not raw production artifacts.
+The preview image is a small public reference image for the case study. The JSON and Markdown files are templates, not raw production artifacts.
 
 ## Private Materials Not Published
 
-- original source image
 - raw ComfyUI workflow JSON
 - private run/test scripts
-- generated output video
+- generated output video as a git-tracked file
 - generated still frames
 - model paths and local runtime paths
 - private prompts and internal iteration notes
 
 ## Video Policy
 
-The successful internal MP4 was found, but it is not committed here. It should only be published later as a small preview or release asset after separate approval, size checks, and visual review.
+The successful MP4 is intentionally not committed here. It is attached to the `scene01-demo-v0.1` GitHub Release to keep repository history lightweight while still making the public demo accessible.
 
 ## Reproducible Public Shape
 

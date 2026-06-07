@@ -20,10 +20,12 @@ GPT-generated image
   -> generated tilt-up video
 ```
 
-The internal test succeeded, but the raw image, raw workflow JSON, private scripts, and generated video are not included in the public repository.
+The internal test succeeded. The repository includes a small input preview and sanitized templates; the raw workflow JSON, private scripts, and generated video are not committed to git. The MP4 is published separately as a GitHub Release asset.
 
 - [Codex-controlled LTX autorender](codex_ltx_autorender.md)
 - [Scene01 LTX tilt-up case study](case_studies/scene01_ltx_tiltup.md)
+- [Scene01 input preview](media/scene01_input_preview.png)
+- [Scene01 demo release asset](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 - [Scene01 shot manifest example](../examples/scene01/shot_manifest.example.json)
 
 ## Public Goals
