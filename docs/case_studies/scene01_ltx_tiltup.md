@@ -14,6 +14,21 @@ The repository includes one demo MP4, and the same file is also published as a G
 - [Scene01 output demo MP4](../media/scene01_output_demo.mp4)
 - [scene01-demo-v0.1](https://github.com/koo-bros/4brospix/releases/tag/scene01-demo-v0.1)
 
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Input image</strong><br>
+      <img src="../media/scene01_input_preview.png" width="420">
+    </td>
+    <td width="50%" align="center">
+      <strong>Generated video preview</strong><br>
+      <a href="https://koo-bros.github.io/4brospix/demo/scene01.html">
+        <img src="../media/scene01_output_preview.gif" width="420">
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Story
 
 The public workflow story is:
